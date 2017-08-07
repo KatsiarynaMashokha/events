@@ -1,0 +1,59 @@
+{{#partial "title"}}
+    Welcome to our even planning service!
+    {{/partial}}
+
+{{#partial "content"}}
+
+<h1>Event Planning Service!</h1>
+<form action='/finalEvent'>
+ <div class="form-group">
+   <label for="guestNum">Your Total Number of Guest: </label>
+   <input id="guestNum" name="guestNum" class="form-control" type="number">
+ </div>
+
+ <div class="form-group">
+    <h4>Food Options</h4>
+     <select name="food">
+    <option value = 1>Italian Cuisine</option>
+    <option value = 2>Asian Fusion</option>
+    <option value = 3>Mediterranean Grill</option>
+    <option value = 4>All American</option>
+    <option value = 5>Indian Experience</option>
+   </select>
+ </div>
+
+  <div class="form-group">
+      <h4>Drink Options</h4>
+      <select name="drink">
+      <option value = 1>Italian Sodas</option>
+      <option value = 2>Thai Tea</option>
+      <option value = 3>Mint Lemonade</option>
+      <option value = 4>Soda Assortment</option>
+      <option value = 5>Chai</option>
+  </select>
+  </div>
+
+  <div class="form-group">
+      <h4>Entertainment Options</h4>
+      <select name="music">
+      <option value = 1>DJ</option>
+      <option value = 2>Live Band</option>
+      <option value = 3>None</option>
+  </select>
+  </div>
+
+    <div class="form-group">
+        <h4>Coupon Options</h4>
+        <select name="coupon">
+        <option value = "1">$100 off your entire package of $1000 or more!</option>
+        <option value = 2>20% off your package of 2,000 or more</option>
+    </select>
+    </div>
+
+
+ <button type="submit" class="btn">Get Event Cost!</button>
+</form>
+<!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}
